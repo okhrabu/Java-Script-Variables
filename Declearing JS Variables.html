@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash </title>
+</head>
+<body>
+    <h3>Declearing a JavaScript variable. </h3>
+    <p>Creating a variable in JavaScript is called declearing a variable.</p>
+    You declear a JavaScript variable with the or the let Keyword:
+    <ol style="color: blue;"><p><b>var</b> carName;</p>
+        or
+        <p><b>let</b> carName;</p></ol>
+        <p>After the decleartion,the variable has no value (technically it is undifined).</p>
+        <p style="color: brown;">To <b>assign</b> a value to the variable,use the equal sign: <br>carName = "Volvo";</p>
+       
+        <p style="color: red;">You can asign a value to thevariable when you declear it: <br>let carName = "Volvo"; 
+        
+        <p>In the examle below,we create a variable called <i style="color: red;">carName</i> and asign the value "Volvo" to it. <br>Then we "output" the value insidean HTML paragraph with id="demo" </p>
+        <h2>Value = undefined</h2>
+        <ol style="color: blue;"><p>
+           - In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input. <br>
+
+           - A variable declared without a value will have the value undefined. <br>
+            
+           - The variable carName will have the value undefined after the execution of this statement:</p> <br>Example: let school (undifined)</ol>
+           <h3>Re-Declaring JavaScript Variables</h3>
+           <p> if you re-declear a JavaScript variable declared with <u><i style="color: red;">var</i></u>,it willnot lose its value. <br> The variable <i style="color:red"><u>carName</u></i> will still have the value "Volvo" after the execution of these statements: </p>
+        
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button type="button" onclick="myFunction()"> Click here</button>
+    <script>
+        let carName = "Volvo";
+        let person = "prakash";
+        price = 200;
+        let school
+        var busName = "galaxy";
+        var busName
+
+        function myFunction() {
+    document.getElementById("demo").innerHTML= carName;
+    document.getElementById("demo1").innerHTML=person;
+    document.getElementById("demo2").innerHTML=price;
+    document.getElementById("demo3").innerHTML=school;
+    document.getElementById("demo4").innerHTML=busName;
+
+        };
+    
+    </script>
+</body>
+</html>
