@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Limbu</title>
+</head>
+<body>
+    <h2>The let and const Keywords </h2>
+    <p>Variables defined with <i style="color: crimson;">let</i> and <i style="color:red">const</i> are hoisted to the top of the bolck,but not <i style="color:red">initialized.</i></p>
+    <p> Meaning:The blick of code is awere ofthe variable, but it can not be used untill it has been decleared. </p>
+    <p>Using a <i style="color:red">let</i> variable before it is decleared will result in a <i style="color:red">ReferenceError.</i></p>
+    <p>The variable is in a "temporal dead zone" from the start of the block until it is decleared:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        try {
+            carName = "thar";
+            let carName = "creta";
+        }
+        catch (err) {
+                document.getElementById("demo").innerHTML = err;
+            }
+    </script>
+</html>
