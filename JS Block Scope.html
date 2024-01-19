@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prakash</title>
+</head>
+<body>
+    <h2 style="color:red"> JavaScript Let</h2>
+    <p style="color:blueviolet">-The <i style="color: red;">let</i> kewboard was introduced in ES6 (2015) <br> -Variable decleared with <i style="color: red;">let</i> have block scope.  <br> -Variable decleared with <i style="color: red;">let</i> must be decleared before use.  <br>-Variable decleared with <i style="color: red;">let</i>cannot be re-decleared in the same scope.</p>
+  <h2>Block Scope</h2>
+    <p>-Before Es6(2015),JavaScript did not have block scope. <br> -JavaScript had <b>globle Scope</b> and <b>function scope</b>. <br>-ES6 introduced the two new JavaScript keywords: <b style="color: brown;"><i>let </i></b>and <b style="color: brown;"><i>const</i></b>. These two keywords provided <b>Block Scope</b> in JavaScript: <br><u>Example:</u> Variable declared inside a {}block cant be outside the block <br> {
+        let x =2;
+    } <br>//x can NOT used here.
+</p>
+
+<h2>Global Scope</h2>
+<p>-Variable decleared with the <i style="color: red;">var </i>always have <b>globle scope.</b> <br>-Variable decleared with the <i style="color: red;">var</i> keyword can NOT have block scope: <br><u>Example:</u>Variable decleared with  <i style="color: red;">var</i> inside a {} block access can be accessed from outside the block: <br> {
+    var x =2; 
+}  <br>// x CAN used here.
+</p>
+<h2>Can not be Redecleared </h2>
+<p>Variables defined with let can not be decleared.
+     <br> You can not accidentally  redecleare  a variable declear with  <i style="color: red;">let</i>. <br> with <i style="color: red;">let</i> you can not do this: <br>let x = "John Doe"; <br>
+
+     let x = 0;
+</p>
+
+<p>
+    <h2>Redeclearing Variables</h2>
+   <p> -Redeclearing a variables using the <i>var</i> keywords can impose problems. <br> -Redeclearing a variable inside a block will also redecleare the variable outside the block: <br>Example: <br>var x = 10;<br>
+    // Here x is 10 <br> 
+    { <br>
+        var x = 2; <br>
+        // Here x is 2 <br>
+        } <br> answer is 
+        <p id="demo1"></p>
+        <p id="demo"></p>
+        <script>
+             var x = 10;
+            {
+                var x = 2;
+                document.getElementById("demo").innerHTML= x;
+            };
+        </script>
+</p>
+</p>
+
+</body>
+</html>
