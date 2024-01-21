@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Limbu</title>
+</head>
+<body>
+    <h2>Constasnt and Objects and Arreys</h2>
+    <p><b>When to use JavaScript const?</b>
+    <br>
+    Always declears a variable with  <i>const</i> when you know that the value should not be changed. <br>
+    Use <i>const </i> when you declear: <br>
+    <ol> A new Array. <br> A new Object. <br> A new Function.  <br> A new regExp.</ol>
+    </p>
+    <p><b>Constant Object and Arrays</b></p>
+    <p>The keyworld const is a little misleading. <br> Its not define a constant value.It defines a constant refress top a value. <br>  BEcouse of this yiu can NOT:
+        <ol>Reassign a constant value  <br>
+            Reassign a constant array <br>
+            Reassign a constant object</ol>
+        But you CAN <br> 
+    <ol>Change the elements of constant array <br>
+        Change the properties of constant objec</ol></p>
+    <p>Declearing a constasnt Arrey does not make the elements unchabgeable:</p>
+    <p id="demo"></p>
+    <script>
+        const cars = [ "Tata", "mahindra","suzuki"];
+        cars[0] = "BMW";
+        cars.push("audi", "Chevrollet");
+        document.getElementById("demo").innerHTML=cars;
+    </script>
+
+</body>
+</html>
